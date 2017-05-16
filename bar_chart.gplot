@@ -4,11 +4,11 @@ set style histogram cluster gap 1
 set style fill solid border -1
 plot 'some_data.dat' using 3:xtic(1) ls 1 title "Title", \
 '' using 2 ls 2 title "Other Title"
-set ylabel "Time (s)"
-set xlabel "Benchmark"
+set ylabel "Y Label"
+set xlabel "X Label"
 set xtics rotate by 45 right
 set terminal png
-set output "file_timings.png"
+set output "figure_name.png"
 set title "Plot Title"
 replot
 quit
